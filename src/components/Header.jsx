@@ -105,7 +105,7 @@ function Header() {
             className="block hover:text-blue-500 transition duration-300"
             onClick={toggleMenu}
           >
-            FAQ
+            FAQs
           </Link>
         </nav>
       </div>
