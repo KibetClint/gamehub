@@ -7,9 +7,9 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const Slider = () => {
   const images = [
-    '/src/assets/images/P2.jpg',
-    '/src/assets/images/P1.jpeg',
-    '/src/assets/images/P2.jpeg',
+    '/images/P2.jpg',
+    '/images/P1.jpeg',
+    '/images/P2.jpeg',
   ];
 
   return (

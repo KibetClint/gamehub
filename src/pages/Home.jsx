@@ -16,7 +16,7 @@ const Home = () => {
                 backgroundPosition: 'center' }}>
                 {/* Pool Insights */}
                 <div className="h-[60vh] bg-amber-200 flex-1 flex flex-col items-center justify-center text-center rounded-lg"
-                    style={{ backgroundImage: 'url(/src/assets/images/pool.webp)', 
+                    style={{ backgroundImage: 'url(/images/pool.webp)', 
                         backgroundSize: 'cover', 
                         backgroundPosition: 'center' }}>
                     <h3 className="text-2xl font-bold mb-2">Pool Insights</h3>
@@ -34,7 +34,7 @@ const Home = () => {
 
                 {/* Chess Insights */}
                 <div className="bg-red-200 h-[60vh] flex-1 flex flex-col items-center justify-center text-center rounded-lg"
-                        style={{ backgroundImage: 'url(/src/assets/images/chess.jpg)', 
+                        style={{ backgroundImage: 'url(/images/chess.jpg)', 
                             backgroundSize: 'cover', 
                             backgroundPosition: 'center' }}>
                     
