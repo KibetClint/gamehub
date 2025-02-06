@@ -1,6 +1,14 @@
 // src/pages/Contact.jsx
-import  { useState } from 'react';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { useState } from 'react';
+import { 
+  FaMapMarkerAlt, 
+  FaPhoneAlt, 
+  FaEnvelope, 
+  FaFacebook, 
+  FaInstagram, 
+  FaLinkedin 
+} from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,10 +37,10 @@ const Contact = () => {
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <section 
-        className="relative h-64 flex items-center justify-center bg-cover bg-center"
+        className="relative h-34 flex items-center justify-center bg-cover bg-center"
         style={{ backgroundImage: 'url(/assets/logo.webp)' }}
       >
-        <div className="absolute inset-0 bg-green-500 opacity-60"></div>
+        <div className="absolute inset-0 bg-teal-500 opacity-60"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl font-bold">Contact Us</h1>
           <p className="mt-2 text-xl">We’d love to hear from you!</p>
@@ -40,10 +48,12 @@ const Contact = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 px-4 bg-gray-100 flex-1">
+      <section className="py-10 px-4 bg-gray-100 flex-1"  style={{ backgroundImage: 'url(/src/assets/images/P2.jpeg)', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center' }}>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          <div className="bg-teal-700 p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
             <p className="mb-6 text-gray-700">
               Whether you have a question, want to discuss a project, or just want to say hello,
@@ -51,24 +61,24 @@ const Contact = () => {
             </p>
             <div className="mb-4 flex items-center">
               <FaMapMarkerAlt className="text-blue-500 mr-4" size={24} />
-              <span className="text-gray-700">123 Main Street, City, Country</span>
+              <span className="text-gray-700">123 Neema Avenue, Nairobi, Kenya</span>
             </div>
             <div className="mb-4 flex items-center">
               <FaPhoneAlt className="text-blue-500 mr-4" size={24} />
-              <span className="text-gray-700">+1 (555) 123-4567</span>
+              <span className="text-gray-700">+254 707 632 591</span>
             </div>
             <div className="mb-4 flex items-center">
               <FaEnvelope className="text-blue-500 mr-4" size={24} />
-              <span className="text-gray-700">info@example.com</span>
+              <span className="text-gray-700">gamehub@gmail.com</span>
             </div>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="text-blue-500 hover:text-blue-700" aria-label="Facebook">
                 <FaFacebook size={24} />
               </a>
               <a href="#" className="text-blue-500 hover:text-blue-700" aria-label="Twitter">
-                <FaTwitter size={24} />
+                <FaXTwitter size={24} />
               </a>
-              <a href="#" className="text-blue-500 hover:text-blue-700" aria-label="Instagram">
+              <a href="#" className="text-red-400 hover:text-blue-700" aria-label="Instagram">
                 <FaInstagram size={24} />
               </a>
               <a href="#" className="text-blue-500 hover:text-blue-700" aria-label="LinkedIn">
@@ -78,15 +88,21 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold mb-4">Send Us a Message</h2>
+          <div className="bg-teal-700 p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl text-gray-700 font-bold mb-4">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-gray-700 font-semibold">Name</label>
+                <label 
+                  htmlFor="name" 
+                  className="block text-gray-700 font-semibold text-left"
+                >
+                  Name
+                </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
+                  placeholder=''
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -94,7 +110,12 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-gray-700 font-semibold">Email</label>
+                <label 
+                  htmlFor="email" 
+                  className="block text-gray-700 font-semibold text-left"
+                >
+                  Email
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -106,7 +127,12 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="subject" className="block text-gray-700 font-semibold">Subject</label>
+                <label 
+                  htmlFor="subject" 
+                  className="block text-gray-700 font-semibold text-left"
+                >
+                  Subject
+                </label>
                 <input
                   type="text"
                   id="subject"
@@ -118,7 +144,12 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-gray-700 font-semibold">Message</label>
+                <label 
+                  htmlFor="message" 
+                  className="block text-gray-700 font-semibold text-left"
+                >
+                  Message
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -129,7 +160,10 @@ const Contact = () => {
                   className="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
                 ></textarea>
               </div>
-              <button type="submit" className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-300">
+              <button 
+                type="submit" 
+                className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-300"
+              >
                 Send Message
               </button>
             </form>
@@ -138,7 +172,7 @@ const Contact = () => {
 
         {/* Map Section */}
         <div className="mt-16 container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">Our Location</h2>
+          <h2 className="text-3xl font-bold text-center text-teal-500 mb-4">Our Location</h2>
           <div className="w-full h-64 rounded-lg overflow-hidden shadow-lg">
             <iframe
               title="map"

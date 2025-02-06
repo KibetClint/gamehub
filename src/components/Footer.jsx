@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-green-900 text-gray-300 py-4 md:py-2">
+    <footer className="bg-teal-900 text-gray-300 py-4 md:py-2">
       <div className="container mx-auto px-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
         {/* About Section */}
         <div>
@@ -89,8 +89,7 @@ function Footer() {
       <div className="border-t border-gray-700 mt-6 md:mt-8 pt-2 md:pt-4 text-center">
         <p className="text-xs md:text-sm">
           &copy; {new Date().getFullYear()}Game Hub. All rights reserved. 
-          {/* <Link to="/privacy-policy" className="hover:text-white mx-2">Privacy Policy</Link> | 
-          <Link to="/terms" className="hover:text-white mx-2">Terms & Conditions</Link> */}
+
         </p>
       </div>
     </footer>

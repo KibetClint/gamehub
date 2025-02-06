@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section
         className="relative h-[20vh] bg-cover bg-center"
-        style={{ backgroundImage: 'url(./assets/pool.webp)' }}
+        style={{ backgroundImage: 'url(/src/assets/images/pool.webp)' }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
@@ -17,7 +17,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Story & Vision Section */}
-      <section className="py-16 px-4 container mx-auto">
+      <section className="bg-teal-70 py-10 px-4 container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center">Our Story</h2>
           <p className="mb-6 text-lg leading-relaxed">
@@ -31,34 +31,34 @@ const AboutUs = () => {
       </section>
 
       {/* Team Showcase */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-10 bg-teal-700">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Meet Our Team</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {/* Team Member 1 */}
             <div className="w-64 text-center">
               <img
-                src="/assets/team1.jpg"
+                src="/src/assets/images/team/D4.jpg"
                 alt="Team member 1"
                 className="rounded-full w-32 h-32 mx-auto shadow-md"
               />
               <h3 className="mt-4 font-bold">John Doe</h3>
-              <p className="text-sm text-gray-600">Founder & CEO</p>
+              <p className="text-sm text-gray-800">Founder & CEO</p>
             </div>
             {/* Team Member 2 */}
             <div className="w-64 text-center">
               <img
-                src="/assets/team2.jpg"
+                src="/src/assets/images/team/D5.jpg"
                 alt="Team member 2"
                 className="rounded-full w-32 h-32 mx-auto shadow-md"
               />
               <h3 className="mt-4 font-bold">Jane Smith</h3>
-              <p className="text-sm text-gray-600">Chief Operations Officer</p>
+              <p className="text-sm text-gray-800">Chief Operations Officer</p>
             </div>
             {/* Team Member 3 */}
             <div className="w-64 text-center">
               <img
-                src="/assets/team3.jpg"
+                src="/src/assets/images/team/D6.jpg"
                 alt="Team member 3"
                 className="rounded-full w-32 h-32 mx-auto shadow-md"
               />
@@ -70,14 +70,14 @@ const AboutUs = () => {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="bg-blue-500 text-white py-8">
+      <section className=" text-white py-8">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Join Our Journey</h2>
           <p className="mb-4">
             Be a part of our growing community of chess and pool enthusiasts.
           </p>
           <Link
-            to="/register"
+            to="/signup"
             className="bg-white text-blue-500 px-6 py-3 rounded-full font-bold transition duration-300 hover:bg-gray-200"
           >
             Get Started

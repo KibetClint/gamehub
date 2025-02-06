@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-green-900 text-white relative">
+    <header className="bg-teal-700 text-white relative">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -28,7 +28,7 @@ function Header() {
           <Link to="/about" className="hover:text-blue-500 transition duration-300 text-sm">
             About
           </Link>
-          <Link to="/tournament/:id" className="hover:text-blue-500 transition duration-300 text-sm">
+          <Link to="/tournaments" className="hover:text-blue-500 transition duration-300 text-sm">
             Tournaments
           </Link>
           <Link to="/register" className="hover:text-blue-500 transition duration-300 text-sm">
@@ -86,14 +86,14 @@ function Header() {
             Tournaments
           </Link>
           <Link
-            to="/packages"
+            to="/register"
             className="block hover:text-blue-500 transition duration-300"
             onClick={toggleMenu}
           >
             Register
           </Link>
           <Link
-            to="/book"
+            to="/contact"
             className="block hover:text-blue-500 transition duration-300"
             onClick={toggleMenu}
           >
