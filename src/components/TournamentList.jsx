@@ -12,7 +12,7 @@ const TournamentList = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {tournaments.map((tournament) => (
-        <div key={tournament.id} className="bg-grey p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <div key={tournament.id} className="bg-cyan-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
           <h4 className="text-xl font-bold mb-2">{tournament.name}</h4>
           <p className="mb-4">{new Date(tournament.date).toLocaleDateString()}</p>
           <Link 

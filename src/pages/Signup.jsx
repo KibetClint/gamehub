@@ -20,10 +20,12 @@ const Signup = () => {
     if (!formData.name.trim()) newErrors.name = 'Name is required';
     if (!formData.email.trim()) newErrors.email = 'Email is required';
     if (!formData.password) newErrors.password = 'Password is required';
-    if (formData.password !== formData.confirmPassword)
+    if (formData.password !== formData.confirmPassword) {
       newErrors.confirmPassword = 'Passwords do not match';
-    if (!formData.termsAccepted)
+    }
+    if (!formData.termsAccepted) {
       newErrors.termsAccepted = 'You must accept the terms and conditions';
+    }
     return newErrors;
   };
 
@@ -45,31 +47,29 @@ const Signup = () => {
     }
     // Perform your signup API call here
     console.log('Signing up user:', formData);
-    navigate('/profile');
+
+    // After successful sign-up, redirect to the login page
+    navigate('/login');
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* Hero Section */}
-      <section
-        className="relative h-24 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/assets/signup-hero.jpg)' }}
-      >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-          <h1 className="text-4xl font-bold">Sign Up</h1>
-          <p className="mt-2 text-xl">Create your account and join our community</p>
-        </div>
-      </section>
-
+    <div
+      className="min-h-screen flex flex-col bg-gray-500"
+      style={{
+        backgroundImage: 'url(/src/assets/images/pool.webp)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       {/* Signup Form */}
       <section className="flex-1 flex items-center justify-center px-4 py-16">
-        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+        <div className="w-full max-w-md bg-cyan-700 p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-bold mb-6 text-center">Create Account</h2>
+          <p className="mt-2 text-xl">Create your account and join our community</p>
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* Name Field */}
             <div>
-              <label htmlFor="name" className="block text-gray-700 font-semibold">
+              <label htmlFor="name" className="text-start block text-gray-700 font-semibold">
                 Name
               </label>
               <input
@@ -90,7 +90,7 @@ const Signup = () => {
 
             {/* Email Field */}
             <div>
-              <label htmlFor="email" className="block text-gray-700 font-semibold">
+              <label htmlFor="email" className="text-start block text-gray-700 font-semibold">
                 Email
               </label>
               <input
@@ -111,7 +111,7 @@ const Signup = () => {
 
             {/* Phone Field (Optional) */}
             <div>
-              <label htmlFor="phone" className="block text-gray-700 font-semibold">
+              <label htmlFor="phone" className="text-start block text-gray-700 font-semibold">
                 Phone Number (Optional)
               </label>
               <input
@@ -127,7 +127,7 @@ const Signup = () => {
 
             {/* Password Field */}
             <div>
-              <label htmlFor="password" className="block text-gray-700 font-semibold">
+              <label htmlFor="password" className="text-start block text-gray-700 font-semibold">
                 Password
               </label>
               <input
@@ -148,7 +148,7 @@ const Signup = () => {
 
             {/* Confirm Password Field */}
             <div>
-              <label htmlFor="confirmPassword" className="block text-gray-700 font-semibold">
+              <label htmlFor="confirmPassword" className="text-start block text-gray-700 font-semibold">
                 Confirm Password
               </label>
               <input
@@ -175,7 +175,9 @@ const Signup = () => {
                 name="termsAccepted"
                 checked={formData.termsAccepted}
                 onChange={handleChange}
-                className={`mr-2 ${errors.termsAccepted ? 'border-red-500' : 'border-gray-300'}`}
+                className={`mr-2 ${
+                  errors.termsAccepted ? 'border-red-500' : 'border-gray-300'
+                }`}
               />
               <label htmlFor="termsAccepted" className="text-gray-700 font-semibold">
                 I agree to the{' '}
@@ -188,6 +190,7 @@ const Signup = () => {
               <p className="mt-1 text-red-500 text-sm">{errors.termsAccepted}</p>
             )}
 
+            {/* Sign Up Button (Redirects to Login on successful submit) */}
             <button
               type="submit"
               className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-300"
@@ -196,6 +199,7 @@ const Signup = () => {
             </button>
           </form>
 
+          {/* Already Have an Account? */}
           <p className="mt-6 text-center text-gray-600">
             Already have an account?{' '}
             <Link to="/login" className="text-blue-500 hover:underline">

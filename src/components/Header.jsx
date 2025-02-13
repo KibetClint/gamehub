@@ -37,7 +37,7 @@ function Header() {
           <Link to="/contact" className="hover:text-blue-500 transition duration-300 text-sm">
             Contact
           </Link>
-          <Link to="/faq" className="hover:text-blue-500 transition duration-300 text-sm">
+          <Link to="/faqs" className="hover:text-blue-500 transition duration-300 text-sm">
             FAQs
           </Link>
         </nav>
@@ -101,7 +101,7 @@ function Header() {
           </Link>
           
           <Link
-            to="/faq"
+            to="/faqs"
             className="block hover:text-blue-500 transition duration-300"
             onClick={toggleMenu}
           >

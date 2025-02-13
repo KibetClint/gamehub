@@ -63,8 +63,8 @@ const Register = () => {
     <div className="min-h-screen flex flex-col bg-teal-700">
       {/* Hero Section */}
       <section
-        className="relative h-24 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/assets/register-hero.jpg)' }}
+        className="relative h-34 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/assets/images/P4/jpg)' }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
@@ -75,12 +75,12 @@ const Register = () => {
 
       {/* Registration Form */}
       <section className="flex-1 flex items-center justify-center px-4 py-16">
-        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold mb-6 text-center">Create Account</h2>
+        <div className="w-full max-w-md bg-green-800 p-8 rounded-lg shadow-lg">
+          <h2 className="text-3xl font-bold mb-6 text-center">Join our Community</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* Name Field */}
             <div>
-              <label htmlFor="name" className="block text-gray-700 font-semibold">
+              <label htmlFor="name" className="text-start block text-gray-700 font-semibold">
                 Name
               </label>
               <input
@@ -99,7 +99,7 @@ const Register = () => {
 
             {/* Email Field */}
             <div>
-              <label htmlFor="email" className="block text-gray-700 font-semibold">
+              <label htmlFor="email" className="text-start block text-gray-700 font-semibold">
                 Email
               </label>
               <input
@@ -118,7 +118,7 @@ const Register = () => {
 
             {/* Phone Number Field */}
             <div>
-              <label htmlFor="phone" className="block text-gray-700 font-semibold">
+              <label htmlFor="phone" className="text-start block text-gray-700 font-semibold">
                 Phone Number (Optional)
               </label>
               <input
@@ -134,7 +134,7 @@ const Register = () => {
 
             {/* Password Field */}
             <div>
-              <label htmlFor="password" className="block text-gray-700 font-semibold">
+              <label htmlFor="password" className="text-start block text-gray-700 font-semibold">
                 Password
               </label>
               <input
@@ -153,7 +153,7 @@ const Register = () => {
 
             {/* Confirm Password Field */}
             <div>
-              <label htmlFor="confirmPassword" className="block text-gray-700 font-semibold">
+              <label htmlFor="confirmPassword" className="text-start block text-gray-700 font-semibold">
                 Confirm Password
               </label>
               <input
@@ -174,7 +174,7 @@ const Register = () => {
 
             {/* Tournament Dropdown */}
             <div>
-              <label htmlFor="tournament" className="block text-gray-700 font-semibold">
+              <label htmlFor="tournament" className="text-start block text-gray-700 font-semibold">
                 Select Tournament
               </label>
               <select
@@ -182,7 +182,7 @@ const Register = () => {
                 name="tournament"
                 value={formData.tournament}
                 onChange={handleChange}
-                className={`mt-1 w-full p-2 border rounded focus:outline-none focus:border-blue-500 ${
+                className={`mt-1 w-full bg-green-800 p-2 border rounded focus:outline-none focus:border-blue-500 ${
                   errors.tournament ? 'border-red-500' : 'border-gray-300'
                 }`}
               >
@@ -229,7 +229,7 @@ const Register = () => {
             </button>
           </form>
 
-          <p className="mt-6 text-center text-gray-600">
+          <p className="mt-6 text-center text-gray-300">
             Already have an account?{' '}
             <Link to="/login" className="text-blue-500 hover:underline">
               Log In

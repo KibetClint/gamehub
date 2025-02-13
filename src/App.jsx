@@ -10,6 +10,11 @@ import Register from './pages/Register'
 import Tournaments from './pages/Tournaments'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import ChessTournamentPage from './pages/Chess'
+import PoolTournamentPage from './pages/Pool'
+import FAQPage from './pages/FAQs'
+import TermsAndConditionsPage from './pages/Terms'
+import ForgotPassword from './pages/Resetpass'
 
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/register" element={<Register />}/>
+        <Route path="/chessdtls" element={<ChessTournamentPage />}/>
+        <Route path="/pooldtls" element={<PoolTournamentPage />}/>
+        <Route path='/faqs' element={<FAQPage/>}/>
+        <Route path='/terms' element={<TermsAndConditionsPage/>}/>
+        <Route path='/reset' element={<ForgotPassword/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/tournaments' element={<Tournaments/>}/>

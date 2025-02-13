@@ -37,8 +37,8 @@ const Tournaments = () => {
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <section
-        className="relative h-64 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/assets/tournaments-hero.jpg)' }}
+        className="relative h-34 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/src/assets/images/pool.webp)' }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex items-center justify-center h-full text-white px-4">
