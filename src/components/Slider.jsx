@@ -9,17 +9,22 @@ import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 const Slider = () => {
   const slides = [
     {
-      image: '/src/assets/images/P2.jpg',
+      image: '/src/assets/images/P1.jpeg',
       title: 'Chess Championship',
       description: 'Join our biggest chess tournament yet!',
     },
     {
-      image: '/src/assets/images/P1.jpeg',
+      image: '/src/assets/images/P1.webp',
       title: 'Pool Masters',
       description: 'Pool competition is on the rise, sign up now!',
     },
     {
       image: '/src/assets/images/P2.jpeg',
+      title: 'Grand Finale',
+      description: 'Exciting prizes await the winners!',
+    },
+    {
+      image: '/src/assets/images/P3.jpeg',
       title: 'Grand Finale',
       description: 'Exciting prizes await the winners!',
     },
@@ -34,24 +39,24 @@ const Slider = () => {
       loop={true}
       effect="fade"
       fadeEffect={{ crossFade: true }}
-      speed={2000} // Reduce transition duration (default ~300). Smaller = faster fade
+      speed={2000} // 2-second fade transition
       className="w-full h-full rounded-lg"
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="relative w-full h-full">
-          {/* Background Image */}
+          {/* Full-Cover Image */}
           <img
             src={slide.image}
             alt={`Slide ${index + 1}`}
             className="w-full h-full object-cover"
           />
 
-          {/* Overlay Content */}
-          <div className="absolute inset-0  bg-opacity-30 flex flex-col justify-center items-center px-4">
-            <h2 className="text-3xl font-bold mb-2 text-white">
+          {/* Black Overlay & Text */}
+          <div className="absolute inset-0 bg-opacity-30 flex flex-col justify-center items-center px-4">
+            <h2 className="text-3xl font-bold mb-2 text-white drop-shadow">
               {slide.title}
             </h2>
-            <p className="max-w-md text-center text-white">
+            <p className="max-w-md text-center text-white drop-shadow">
               {slide.description}
             </p>
             {/* Optional: A button or link can go here */}

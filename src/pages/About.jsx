@@ -17,7 +17,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Story & Vision Section */}
-      <section className="bg-teal-70 py-10 px-4 container mx-auto">
+      <section className="bg-cyan-900 py-10 px-4 container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center">Our Story</h2>
           <p className="mb-6 text-lg leading-relaxed">
