@@ -7,6 +7,7 @@ import 'swiper/css/effect-fade'; // Import the fade effect CSS
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
 const Slider = () => {
+<<<<<<< HEAD
   const slides = [
     {
       image: '/src/assets/images/P1.jpeg',
@@ -28,6 +29,12 @@ const Slider = () => {
       title: 'Grand Finale',
       description: 'Exciting prizes await the winners!',
     },
+=======
+  const images = [
+    '/images/P2.jpg',
+    '/images/P1.jpeg',
+    '/images/P2.jpeg',
+>>>>>>> refs/remotes/origin/main
   ];
 
   return (

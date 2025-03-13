@@ -48,7 +48,7 @@ const Contact = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-10 px-4 bg-gray-100 flex-1"  style={{ backgroundImage: 'url(/src/assets/images/P2.jpeg)', 
+      <section className="py-10 px-4 bg-gray-100 flex-1"  style={{ backgroundImage: 'url(/images/P2.jpeg)', 
               backgroundSize: 'cover', 
               backgroundPosition: 'center' }}>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">

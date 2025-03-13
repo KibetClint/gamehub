@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section
         className="relative h-[20vh] bg-cover bg-center"
-        style={{ backgroundImage: 'url(/src/assets/images/pool.webp)' }}
+        style={{ backgroundImage: 'url(/images/pool.webp)' }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
@@ -38,7 +38,7 @@ const AboutUs = () => {
             {/* Team Member 1 */}
             <div className="w-64 text-center">
               <img
-                src="/src/assets/images/team/D4.jpg"
+                src="/images/team/D4.jpg"
                 alt="Team member 1"
                 className="rounded-full w-32 h-32 mx-auto shadow-md"
               />
@@ -48,7 +48,7 @@ const AboutUs = () => {
             {/* Team Member 2 */}
             <div className="w-64 text-center">
               <img
-                src="/src/assets/images/team/D5.jpg"
+                src="/images/team/D5.jpg"
                 alt="Team member 2"
                 className="rounded-full w-32 h-32 mx-auto shadow-md"
               />
@@ -58,7 +58,7 @@ const AboutUs = () => {
             {/* Team Member 3 */}
             <div className="w-64 text-center">
               <img
-                src="/src/assets/images/team/D6.jpg"
+                src="/images/team/D6.jpg"
                 alt="Team member 3"
                 className="rounded-full w-32 h-32 mx-auto shadow-md"
               />
