@@ -9,7 +9,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         className="relative md:h-[80vh] h-auto flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/images/P2.webp')" }}
+        style={{ backgroundImage: "url('/images/P2.webp')" }}
       >
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-black/60 to-transparent" />
@@ -66,7 +66,7 @@ export default function Home() {
           <div
             className="relative h-64 sm:h-72 md:h-80 rounded-lg overflow-hidden shadow-lg flex items-end"
             style={{ 
-              backgroundImage: "url('/src/assets/images/pool.webp')",
+              backgroundImage: "url('/images/pool.webp')",
               backgroundSize: 'cover',
               backgroundPosition: 'center' 
             }}
@@ -90,7 +90,7 @@ export default function Home() {
           <div
             className="relative h-64 sm:h-72 md:h-80 rounded-lg overflow-hidden shadow-lg flex items-end"
             style={{ 
-              backgroundImage: "url('/src/assets/images/chess.jpg')", 
+              backgroundImage: "url('/images/chess.jpg')", 
               backgroundSize: 'cover', 
               backgroundPosition: 'center' 
             }}

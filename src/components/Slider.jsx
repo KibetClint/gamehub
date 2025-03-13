@@ -9,22 +9,22 @@ import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 const Slider = () => {
   const slides = [
     {
-      image: '/src/assets/images/P1.jpeg',
+      image: '/images/P1.jpeg',
       title: 'Chess Championship',
       description: 'Join our biggest chess tournament yet!',
     },
     {
-      image: '/src/assets/images/P1.webp',
+      image: '/images/P1.webp',
       title: 'Pool Masters',
       description: 'Pool competition is on the rise, sign up now!',
     },
     {
-      image: '/src/assets/images/P2.jpeg',
+      image: '/images/P2.jpeg',
       title: 'Grand Finale',
       description: 'Exciting prizes await the winners!',
     },
     {
-      image: '/src/assets/images/P3.jpeg',
+      image: '/images/P3.jpeg',
       title: 'Grand Finale',
       description: 'Exciting prizes await the winners!',
     },
