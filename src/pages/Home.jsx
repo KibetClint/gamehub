@@ -12,7 +12,7 @@ export default function Home() {
         style={{ backgroundImage: "url('/src/assets/images/P2.webp')" }}
       >
         {/* Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-green-900 via-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-black/60 to-transparent" />
 
         {/* Hero Content */}
         <div className="relative z-10 text-center text-white px-4 max-w-3xl">
@@ -33,8 +33,8 @@ export default function Home() {
       {/* HIGHLIGHTS SECTION (Slider + Quick Info) */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-          {/* Slider with Reduced Rectangular Height */}
-          <div className="relative w-full h-[200px] sm:h-[250px] md:h-[350px] overflow-hidden shadow-lg">
+          {/* Rectangular Slider */}
+          <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden shadow-lg">
             <Slider />
           </div>
 
@@ -48,11 +48,13 @@ export default function Home() {
               Hone your skills, connect with fellow enthusiasts, and experience the thrill of 
               competitive play in a vibrant community.
             </p>
-            <Link to="/signup" className="flex justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition duration-300 justify-items-center ">
-                Join Now
-              </button>
-            </Link>
+            <div className="flex justify-center">
+              <Link to="/signup">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                  Join Now
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -69,7 +71,7 @@ export default function Home() {
               backgroundPosition: 'center' 
             }}
           >
-            {/* Optional dark overlay for readability */}
+            {/* Dark Overlay for Readability */}
             <div className="absolute inset-0 bg-opacity-30" />
             <div className="relative z-10 p-4 text-white">
               <h3 className="text-xl sm:text-2xl font-bold mb-2">Pool</h3>
